@@ -34,9 +34,6 @@
             color: #fff;
             padding: 20px 0;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
         button {
             background-color: #007bff;
@@ -65,16 +62,5 @@
     <footer>
         <p>&copy; 2024 Koblorz. All rights reserved.</p>
     </footer>
-    <script>
-        // Redirect to root domain if accessed with any other URL
-        if (window.location.hostname !== "koblorz.com") {
-            window.location.replace("https://koblorz.com");
-        }
-
-        // Redirect to root domain if accessed via /index or /index.html
-        if (window.location.pathname.endsWith("/index") || window.location.pathname.endsWith("/index.html")) {
-            window.location.replace("https://koblorz.com");
-        }
-    </script>
 </body>
 </html>
