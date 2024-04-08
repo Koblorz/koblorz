@@ -1,6 +1,2 @@
 RewriteEngine On
 RewriteRule ^index(\.html?)?$ - [R=404,L]
-
-location ~ ^/index(\.html?)?$ {
-    return 404;
-}
