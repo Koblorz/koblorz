@@ -6,23 +6,6 @@ permalink: /
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-    // Check if the current URL ends with "index" or "index.html"
-    if (window.location.pathname.endsWith("/index") || window.location.pathname.endsWith("/index.html")) {
-        // Check if the requested URL exists
-        fetch(window.location.pathname)
-            .then(response => {
-                // If the response status is 404, redirect to the custom 404 page
-                if (response.status === 404) {
-                    window.location.replace("/404.html");
-                }
-            })
-            .catch(error => {
-                // If an error occurs (e.g., network error), redirect to the custom 404 page
-                window.location.replace("/404.html");
-            });
-    }
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Koblorz</title>
