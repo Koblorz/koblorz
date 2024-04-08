@@ -6,6 +6,13 @@ permalink: /
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+    // Check if the current URL ends with "index" or "index.html"
+    if (window.location.pathname.endsWith("/index") || window.location.pathname.endsWith("/index.html")) {
+        // Redirect to the clean URL (remove "index" or "index.html" from the URL)
+        window.location.replace("/");
+    }
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Koblorz</title>
