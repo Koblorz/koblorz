@@ -11,29 +11,30 @@
             padding: 0;
             background-color: #f0f0f0;
             line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
         }
         .container {
-            max-width: 960px;
-            margin: 0 auto;
+            max-width: 400px;
             padding: 20px;
-            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-        }
-        h1 {
-            margin-top: 0;
-        }
-        p {
-            margin-bottom: 20px;
-        }
-        footer {
+        .footer {
             background-color: #333;
             color: #fff;
             padding: 20px 0;
             text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer p {
+            margin: 0;
         }
         button {
             background-color: #007bff;
@@ -50,17 +51,20 @@
     </style>
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>Welcome to Koblorz</h1>
         <p>Koblorz - Your destination for all things technology.</p>
-        <a href="about"><button>About Us</button></a>
-    </header>
-    <div class="container">
-        <h2>About Koblorz</h2>
-        <p>Koblorz is a platform dedicated to technology, providing the latest news, reviews, and insights.</p>
+        <a href="about"><button>Learn More</button></a>
     </div>
-    <footer>
+    <div class="footer">
         <p>&copy; 2024 Koblorz. All rights reserved.</p>
-    </footer>
+    </div>
+    <script>
+        // Redirect away from index.html and /index
+        const currentPath = window.location.pathname;
+        if (currentPath.endsWith("/index") || currentPath.endsWith("/index.html")) {
+            window.location.replace("https://koblorz.com/404.html");
+        }
+    </script>
 </body>
 </html>
