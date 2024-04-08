@@ -1,8 +1,0 @@
-RewriteEngine On
-
-# Redirect /index.html to / (remove .html extension)
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
-RewriteRule ^index\.html$ / [R=301,L]
-
-# Redirect /index to / (remove index from the URL)
-RewriteRule ^index$ / [R=301,L]
