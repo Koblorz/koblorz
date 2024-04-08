@@ -64,5 +64,11 @@
     <footer>
         <p>&copy; 2024 Koblorz. All rights reserved.</p>
     </footer>
+    <script>
+        // Redirect to root domain if accessed with any other URL
+        if (window.location.hostname !== "koblorz.com") {
+            window.location.replace("https://koblorz.com");
+        }
+    </script>
 </body>
 </html>
